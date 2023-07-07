@@ -134,17 +134,17 @@ function Details(props) {
       {discount === 0 ? (
         <div className={styles.price}>
           <span className={styles.main}>
-            &#8377;{markedPrice.toLocaleString()}
+          S/{markedPrice.toLocaleString()}
           </span>
         </div>
       ) : (
         <div className={styles.price}>
           <span className={styles.main}>
-            &#8377;{sellingPrice.toLocaleString()}
+          S/{sellingPrice.toLocaleString()}
           </span>
           <span className={styles.original}>
             {" "}
-            &#8377;{markedPrice.toLocaleString()}
+            S/{markedPrice.toLocaleString()}
           </span>
           <span className={styles.discount}>{discount}% off</span>
         </div>

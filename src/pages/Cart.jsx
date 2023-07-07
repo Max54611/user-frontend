@@ -94,7 +94,7 @@ function Payment(props) {
   };
   return (
     <div className={styles.payment}>
-      <h3 className={styles.total}>Total = &#8377;{total.toLocaleString()}</h3>
+      <h3 className={styles.total}>Total = S/{total.toLocaleString()}</h3>
       <button className={"btn btn-dark " + styles.pay} onClick={handlePay}>
         PROCEED TO PAY
       </button>

@@ -53,7 +53,7 @@ function Brand() {
       onClick={() => navigate("/")}
     >
       <img src={Logo} alt="" />
-      &nbsp; Ecommerce
+      &nbsp; NuecesyPasas
     </p>
   );
 }
