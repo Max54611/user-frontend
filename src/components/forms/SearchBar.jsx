@@ -26,7 +26,7 @@ export default function SearchBar() {
           name="query"
           className="form-control"
           type="text"
-          placeholder="Search for products"
+          placeholder="Buscar Productos"
           aria-label="Search"
           value={value}
           onChange={(event) => setValue(event.target.value)}

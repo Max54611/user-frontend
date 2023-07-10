@@ -97,7 +97,7 @@ function CartButton(props) {
           marginRight: "8px",
         }}
       />{" "}
-      {isAddedToCart ? "GO TO CART" : "ADD TO CART"}
+      {isAddedToCart ? "IR AL CARRO" : "AÑADIR AL CARRO"}
     </button>
   );
 }
@@ -128,29 +128,29 @@ function Details(props) {
         </div>
         <span className={styles.reviews}>
           {" "}
-          {reviewCount.toLocaleString()} Reviews
+          {reviewCount.toLocaleString()} Reseñas
         </span>
       </div>
       {discount === 0 ? (
         <div className={styles.price}>
           <span className={styles.main}>
-            &#8377;{markedPrice.toLocaleString()}
+          S/{markedPrice.toLocaleString()}
           </span>
         </div>
       ) : (
         <div className={styles.price}>
           <span className={styles.main}>
-            &#8377;{sellingPrice.toLocaleString()}
+          S/{sellingPrice.toLocaleString()}
           </span>
           <span className={styles.original}>
             {" "}
-            &#8377;{markedPrice.toLocaleString()}
+            S/{markedPrice.toLocaleString()}
           </span>
           <span className={styles.discount}>{discount}% off</span>
         </div>
       )}
       <div>
-        <h3>Description</h3>
+        <h3>Descripcion</h3>
         <span>{description}</span>
       </div>
     </div>

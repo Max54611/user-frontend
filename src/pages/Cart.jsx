@@ -51,7 +51,7 @@ export default function CartPage() {
           onClose={() => setIsOpen(false)}
           isOpen={isOpen}
         />
-        <MessageCard message="Cart Is Empty" />
+        <MessageCard message="Carrito Vacio" />
       </>
     );
 
@@ -94,9 +94,9 @@ function Payment(props) {
   };
   return (
     <div className={styles.payment}>
-      <h3 className={styles.total}>Total = &#8377;{total.toLocaleString()}</h3>
+      <h3 className={styles.total}>Total = S/{total.toLocaleString()}</h3>
       <button className={"btn btn-dark " + styles.pay} onClick={handlePay}>
-        PROCEED TO PAY
+        PAGAR
       </button>
     </div>
   );

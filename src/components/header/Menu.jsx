@@ -52,7 +52,7 @@ export default function Profile() {
               marginRight: "8px",
             }}
           />
-          Cart
+          Carrrito
         </button>
       </li>
       <li className="nav-item">
@@ -68,7 +68,7 @@ export default function Profile() {
               marginRight: "8px",
             }}
           />
-          Orders
+          Orden
         </button>
       </li>
       <li className="nav-item">
@@ -89,8 +89,8 @@ export default function Profile() {
       </li>
       <WarningModal
         isOpen={isWarningOpen}
-        title="Logout"
-        message="Are you sure you want to logout?"
+        title="Cerrar Sesion"
+        message="Seguro que deseas cerrar sesion?"
         onCancel={() => setIsWarningOpen(false)}
         onConfirm={() => {
           dispatch(actions.authActions.logout());

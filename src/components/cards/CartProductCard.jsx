@@ -32,17 +32,17 @@ export default function CartProductCard(props) {
         {discount === 0 ? (
           <div className={styles.price}>
             <span className={styles.main}>
-              &#8377;{(sellingPrice * count).toLocaleString()}
+            S/{(sellingPrice * count).toLocaleString()}
             </span>
           </div>
         ) : (
           <div className={styles.price}>
             <span className={styles.main}>
-              &#8377;{(sellingPrice * count).toLocaleString()}
+            S/{(sellingPrice * count).toLocaleString()}
             </span>
             <span className={styles.original}>
               {" "}
-              &#8377;{(markedPrice * count).toLocaleString()}
+              S/{(markedPrice * count).toLocaleString()}
             </span>
             <span className={styles.discount}>{discount}% off</span>
           </div>
@@ -93,7 +93,7 @@ function Controls(props) {
         onClick={() => setIsOpen(true)}
         className={styles["btn-remove"] + " btn btn-dark"}
       >
-        REMOVE
+        QUITAR
       </button>
       <WarningModal
         isOpen={isOpen}

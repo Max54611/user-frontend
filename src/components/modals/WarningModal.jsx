@@ -12,10 +12,10 @@ export default function WarningModal(props) {
           <p className="card-text">{message}</p>
           <div className="d-flex justify-content-end">
             <button className="btn btn-light" onClick={onCancel}>
-              Cancel
+              Cancelar
             </button>
             <button className="btn btn-dark" onClick={onConfirm}>
-              Confirm
+              Confirmar
             </button>
           </div>
         </div>

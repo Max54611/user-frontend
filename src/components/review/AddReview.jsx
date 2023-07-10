@@ -29,17 +29,17 @@ export default function AddReview(props) {
 
   return (
     <div className={styles.container}>
-      <h3>Add a review</h3>
+      <h3>Añade una reseña</h3>
       <br />
       <div>{stars}</div>
       <textarea
         className={styles.text}
         onChange={(e) => setValues({ ...values, text: e.target.value })}
-        placeholder="Tell us something about the product"
+        placeholder="Dinos algo acerca del producto"
         value={values.text}
       ></textarea>
       <button className={"btn btn-dark " + styles.btn} onClick={submit}>
-        Submit
+        Enviar
       </button>
     </div>
   );

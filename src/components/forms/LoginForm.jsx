@@ -60,10 +60,10 @@ export default function LoginForm(props) {
           />
           <div className="d-flex justify-content-end mb-5">
             <button className="btn btn-light" onClick={onClose}>
-              Cancel
+              Cancelar
             </button>
             <button className="btn btn-dark" type="submit">
-              Confirm
+              Confirmar
             </button>
           </div>
         </form>
